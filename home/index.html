@@ -8,21 +8,97 @@
     <link rel="stylesheet" href="https://use.typekit.net/gft4sfz.css">
     <link rel="icon" type="image/png" href="globo.png">
 </head>
-<body>
+<body id="body">
    
     <header>
-        
         <img src="globo.png" alt="ReciclaTech">
-        <H1>ReciclaTech</H1>
-
+        <h1>ReciclaTech</h1>
     </header>
-    <div class="janela"></div>
+    
+    <div class="janela">
+        <div id="userStatus" class="user-status" style="display: none;">
+            <span id="nomeExibicao"></span>
+            <div class="acoes-usuario">
+            <button onclick="abrirModalParaAlterar()" class="btn-janela">Alterar Dados</button>
+            <button onclick="deslogar()" class="btn-janela btn-sair">Sair</button>
+            </div>
+        </div>
+    </div>
     
     <main>
+        <section class="conteudo-principal">
+            <h1>Sobre o nosso site.</h1>
+            <p>O ReciclaTech é o ponto de encontro entre a sustentabilidade e a oportunidade. Se você tem lixo eletrônico ou recicláveis, encontre o destino certo aqui. Se você é um coletor ou instituição em busca de materiais, use nossa rede para localizar doadores e fortalecer seu trabalho. Juntos, fechamos o ciclo da reciclagem.</p>
+            
+            <h2 class="subtitulo">Lixo eletrônico</h2>
+            <a href="#" class="link-modal" onclick="abrirModal()">Saiba onde descartar seu lixo eletrônico.</a>
 
- 
+            <h2 class="subtitulo">Recicláveis</h2>
+            <a href="#" class="link-modal" onclick="abrirModal()">Saiba onde conseguir ou descartar seu reciclável.</a>
+        </section>
     </main>
 
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <h2 class="modal-titulo">Fazer post</h2>
+            
+            <div id="etapa1" class="etapa-modal">
+                <p class="modal-pergunta">Você é:</p>
+                <div class="container-escolha">
+                    <div class="opcao">
+                        <label><input type="radio" name="tipoUsuario" value="Doador"> <strong>Doador</strong></label>
+                        <p class="texto-ajuda">Doador é a pessoa que possui materiais que não utiliza mais e deseja dar um destino correto para eles...</p>
+                    </div>
+                    <div class="divisor-vertical"></div>
+                    <div class="opcao">
+                        <label><input type="radio" name="tipoUsuario" value="Coletor"> <strong>Coletor</strong></label>
+                        <p class="texto-ajuda">Coletor é quem realiza a coleta desses materiais, podendo ser um catador, uma pessoa autônoma ou empresa...</p>
+                    </div>
+                </div>
+            </div>
 
+
+            <div id="etapa2" class="etapa-modal" style="display: none;">
+                <p class="modal-pergunta">Quem você é?</p>
+                <div class="form-grupo">
+                    <label>Nome:</label>
+                    <input type="text" id="nome" class="input-linha">
+                </div>
+                <div class="form-grupo">
+                    <label>Cidade:</label>
+                    <input type="text" id="cidade" class="input-linha">
+                </div>
+                <div class="form-grupo">
+                    <label>Material:</label>
+                    <input type="text" id="material" class="input-linha" placeholder="Ex: Pilhas, Papelão...">
+                </div>
+                <div class="form-grupo">
+                    <label>Descrição*:</label>
+                    <input type="text" id="descricao" class="input-linha">
+                </div>
+                <div class="form-grupo">
+                    <label>WhatsApp:</label>
+                    <input type="text" id="whatsapp" class="input-linha">
+                </div>
+                <p class="label-foto">Adicionar fotos do material*:</p>
+            </div>
+
+            <div id="etapa3" class="etapa-modal" style="display: none;">
+                <p class="modal-pergunta">Quem você é?</p>
+                <p class="texto-privacidade">Você escolhe como compartilhar suas informações. Doadores podem manter o endereço privado e combiná-lo apenas no contato com o coletor...</p>
+                <div class="form-grupo">
+                    <label>Adicionar Endereço (opcional):</label>
+                    <input type="text" id="endereco" class="input-linha">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="btnVoltar" class="btn-voltar" onclick="voltarEtapa()" style="visibility: hidden;">← Voltar</button>
+                <button id="btnContinuar" class="btn-continuar" onclick="proximaEtapa()">Continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-</html>    
+</html>
