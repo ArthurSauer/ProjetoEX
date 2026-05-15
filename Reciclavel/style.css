@@ -42,11 +42,13 @@ h5{
     top: 0;
 }
 header{
-    
-        background-color: #0B58BD;
-        height: 135px;
-        display: flex;
-        align-items: center;
+    background-color: #0B58BD;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.25);
+    z-index: 3;
 }
 header h1{
     position: absolute;
@@ -102,3 +104,8 @@ main h1, p{
     display: flex;
     width: 100%;
 }
+.janela{
+    background: #d9d9d9;
+    height: 5vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;}
