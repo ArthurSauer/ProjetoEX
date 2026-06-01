@@ -107,3 +107,68 @@ main h1, p{
     height: 5vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     z-index: 2;}
+
+.Destaque-locais{
+    margin-top: 40px;
+    background-color: #cccc;
+    margin-left: -1077px;
+    margin-right: 28px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Destaque-locais_2{
+    margin-top: 18PX;
+    margin-bottom: 200px;
+    background-color: #cccc;
+    margin-left: -1077px;
+    margin-right: 28px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Destaque-locais_3{
+    margin-top: -175PX;
+    margin-bottom: 70px;
+    background-color: #cccc;
+    margin-left: -1077px;
+    margin-right: 28px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Imagens-Locais1{
+    width: 228px;
+}
+
+.Horarios-funcionamento,.Endereço-locais,.telefone-para-contato{
+font-size: 16px;
+margin-left: 20px;
+margin-bottom: 5px;
+}
+.Imagens-Locais{
+    width: 270px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.logo-link{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    width: 100%;
+}
+h2 {
+    margin-left: 17px;
+}
+.Negrito{
+    font-weight: bold;
+}
+.Imagens-Locais2{
+    width: 320px;
+    height: 180px;
+}
+.Imagens-Locais3{
+    width: 265px;
+    height: 153px;
+}
