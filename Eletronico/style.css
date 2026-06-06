@@ -11,35 +11,19 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
-    height: 100%;
     background: linear-gradient(to bottom, #ffffff 0%, #77b2f3 100%);
     background-attachment: fixed;
-    overflow: auto;
 }
 main{
     display: flex;
-    align-items: end;
+    flex-direction: column;
     flex: 1;
     background-color: #f4f0ea;
-    width: 85%;
+    width: 90%;
     max-width: 1100px;
-    margin: 0px auto;
-    min-width: 10vh;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
-    display: flex;
-    flex-direction: column;
-}
-h5{
-
-    width: 100px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 30px;
 }
 header{   
     background-color: #0B58BD;
@@ -47,128 +31,72 @@ header{
     display: flex;
     align-items: center;
     box-shadow: 0 6px 5px rgba(0, 0, 0, 0.25);
-    z-index: 3;}
-header h1{
-    position: absolute;
-    top: 33px;
-    left: 107px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 50px;
-    height: 70px;
-    z-index: 1;
+    z-index: 3;
+}
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 img[src="globo.png"]{
     width: 107px;
     height: 107px;
     margin-left: 20px;
-    margin-right: -19px;
-    z-index: 2;
 }
-footer{
-    background-color: #3c7114;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-main h1, p{
-    margin-top: 50px;    
-    margin-left: 20px;    
-    padding: 15px;
-    color: black;
-}
-
-.calloutBox{
-    width: 25%;
-    margin: 27px;
-    height: 70vh;
-    background-color: #d9d9d9;
-    overflow: auto;
-
-}
-.calloutBox h1{
-    font-size: 1.8rem;
-    padding: 0;
-    margin: 4px 20px;
-    color: #0B58BD;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
-.logo-link{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    width: 100%;
+header h1{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    margin-left: 20px;
 }
 .janela{
     background: #d9d9d9;
     height: 5vh;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    z-index: 2;}
-
-.Destaque-locais{
-    margin-top: 40px;
-    background-color: #cccc;
-    margin-left: -1077px;
-    margin-right: 28px;
-    color: black;
+    z-index: 2;
+}
+.titulo-secao {
+    color: #515151;
+    font-size: 28px;
+    margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.Destaque-locais_2{
-    margin-top: 18PX;
-    margin-bottom: 200px;
-    background-color: #cccc;
-    margin-left: -1077px;
-    margin-right: 28px;
+.ponto-card {
+    background-color: #e2e2e2;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 8px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-.Destaque-locais_3{
-    margin-top: -175PX;
-    margin-bottom: 70px;
-    background-color: #cccc;
-    margin-left: -1077px;
-    margin-right: 28px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.Imagens-Locais1{
-    width: 228px;
-}
-
-.Horarios-funcionamento,.Endereço-locais,.telefone-para-contato{
-font-size: 16px;
-margin-left: 20px;
-margin-bottom: 5px;
-}
-.Imagens-Locais{
-    width: 270px;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-.logo-link{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    color: inherit;
+.container-imagens {
     display: flex;
-    width: 100%;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
 }
-h2 {
-    margin-left: 17px;
+.Imagens-Locais {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+h2.Pontos-de-descarte {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #0B58BD;
+}
+.Horarios-funcionamento, .Endereço-locais, .telefone-para-contato {
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.Endereço-locais a {
+    color: #0b58bd;
+    text-decoration: underline;
 }
 .Negrito{
     font-weight: bold;
-}
-.Imagens-Locais2{
-    width: 320px;
-    height: 180px;
-}
-.Imagens-Locais3{
-    width: 265px;
-    height: 153px;
 }
