@@ -14,7 +14,83 @@ body{
     background: linear-gradient(to bottom, #ffffff 0%, #77b2f3 100%);
     background-attachment: fixed;
 }
-main{
+header {   
+    background-color: #0B58BD;
+    min-height: 135px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+    padding: 10px 0;
+}
+.header-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.logo-link {
+    text-decoration: none;
+    color: inherit;
+}
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+img[src="globo.png"] {
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+header h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 42px;
+    margin-left: 15px;
+}
+.menu-navegacao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.nav-link:hover, .nav-link.ativo {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-link.destaque-equipe {
+    background-color: #25D366;
+    color: white;
+}
+.nav-link.destaque-equipe:hover {
+    background-color: #1ebd54;
+}
+.janela {
+    background: #d9d9d9;
+    min-height: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+.user-status {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+main {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -22,81 +98,164 @@ main{
     width: 90%;
     max-width: 1100px;
     margin: 0 auto 40px auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    padding: 30px;
-}
-header{   
-    background-color: #0B58BD;
-    height: 135px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.25);
-    z-index: 3;
-}
-.logo-link{
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-img[src="globo.png"]{
-    width: 107px;
-    height: 107px;
-    margin-left: 20px;
-}
-header h1{
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 50px;
-    margin-left: 20px;
-}
-.janela{
-    background: #d9d9d9;
-    height: 5vh;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-    z-index: 2;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 40px;
 }
 .titulo-secao {
     color: #515151;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid #515151;
+    padding-bottom: 5px;
 }
 .ponto-card {
-    background-color: #e2e2e2;
-    margin-bottom: 30px;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    padding: 25px;
+    border-radius: 12px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.header-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+h2.Pontos-de-descarte {
+    font-size: 22px;
+    color: #0B58BD;
+}
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.status-badge.aberto {
+    background-color: #e6f4ea;
+    color: #137333;
+}
+.status-badge.fechado {
+    background-color: #fce8e6;
+    color: #c5221f;
 }
 .container-imagens {
     display: flex;
     gap: 15px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 .Imagens-Locais {
-    width: 250px;
-    height: 160px;
+    flex: 1;
+    width: 100%;
+    height: 180px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
-h2.Pontos-de-descarte {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #0B58BD;
-}
-.Horarios-funcionamento, .Endereço-locais, .telefone-para-contato {
-    font-size: 16px;
-    margin-bottom: 8px;
-    line-height: 1.4;
+.Horarios-funcionamento, .Endereço-locais {
+    font-size: 15px;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 .Endereço-locais a {
     color: #0b58bd;
+    text-decoration: none;
+}
+.Endereço-locais a:hover {
     text-decoration: underline;
 }
 .Negrito{
     font-weight: bold;
+}
+.botoes-acao {
+    margin: 15px 0;
+}
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebd54;
+}
+.mapa-wrapper {
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+.mapa-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+    img[src="globo.png"] {
+        width: 70px;
+        height: 70px;
+    }
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu-navegacao {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    main {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    .container-imagens {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .Imagens-Locais {
+        height: 200px;
+    }
+    .header-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    h2.Pontos-de-descarte {
+        font-size: 18px;
+    }
+    .mapa-wrapper {
+        height: 250px;
+        padding-bottom: 0;
+    }
 }

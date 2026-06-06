@@ -3,30 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reciclatech</title>
+    <title>Reciclatech - Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gft4sfz.css">
     <link rel="icon" type="image/png" href="globo.png">
 </head>
 <body id="body">
+
+
+<div id="popup-container" class="popup-overlay">
+    <div class="popup-box">
+        <button id="btn-fechar-popup" class="popup-fechar-comum">&times;</button>
+        
+        <div class="popup-conteudo-completo">
+            <span class="popup-icone-grande">♻️</span>
+            <h2>Parceria ReciclaTech & UNIPAR!</h2>
+            <p>Em conjunto com a universidade <strong>UNIPAR</strong>, estamos disponibilizando containers exclusivos para o descarte correto de seu lixo eletrônico diretamente no campus!</p>
+            <p class="popup-contato">Para mais informações, entre em contato pelo número:<br>
+               <a href="https://wa.me/5545999957340" target="_blank" class="popup-link-whats">📱 (45) 99995-7340</a>
+            </p>
+        </div>
+
+
+        <div class="popup-conteudo-balao hidden">
+            <span>♻️ Containers UNIPAR (45) 99995-7340</span>
+        </div>
+    </div>
+</div>
    
     <header>
-        <img src="globo.png" alt="ReciclaTech">
-        <h1>ReciclaTech</h1>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="globo.png" alt="ReciclaTech">
+                <h1>ReciclaTech</h1>
+            </div>
+            <nav class="menu-navegacao">
+                <a href="#" class="nav-link ativo">Home</a>
+                <a href="../Eletronico/Eletronico.html" class="nav-link">Eletrônicos</a>
+                <a href="../equipe/index.html" class="nav-link destaque-equipe">Nossa Equipe →</a>
+            </nav>
+        </div>
     </header>
     
     <div class="janela">
-
+        <div class="user-status">
+            <span>Bem-vindo ao ReciclaTech</span>
+        </div>
     </div>
     
     <main>
         <section class="conteudo-principal">
-            <h1>Sobre o nosso site.</h1>
-            <p>O ReciclaTech é o ponto de encontro entre a sustentabilidade e a oportunidade. Se você tem lixo eletrônico ou recicláveis, encontre o destino certo aqui. Se você é um coletor ou instituição em busca de materiais, use nossa rede para localizar doadores e fortalecer seu trabalho. Juntos, fechamos o ciclo da reciclagem.</p>
+            <h1 class="titulo-principal">Sobre o nosso site</h1>
+            <p class="texto-introducao">
+                O <strong>ReciclaTech</strong> é o ponto de encontro entre a sustentabilidade e a oportunidade. 
+                Se você tem lixo eletrônico ou recicláveis, encontre o destino certo aqui. Se você é um coletor ou 
+                instituição em busca de materiais, use nossa rede para localizar doadores e fortalecer seu trabalho. 
+                Juntos, fechamos o ciclo da reciclagem.
+            </p>
             
-            <h2 class="subtitulo">Lixo eletrônico</h2>
-            <a href="/Eletronico/Eletronico.html" class="link-modal"  >Saiba onde descartar seu lixo eletrônico.</a>
+            <h2 class="subtitulo-secao">Categorias de Descarte</h2>
+            
+            <div class="grid-categorias">
+                
+                <div class="card-categoria reveal">
+                    <div class="card-icone">💻</div>
+                    <h3>Lixo Eletrônico</h3>
+                    <p>Computadores, notebooks, celulares, placas de circuito e periféricos obsoletos.</p>
+                    <a href="../Eletronico/Eletronico.html" class="btn-categoria">Ver Locais</a>
+                </div>
 
+                <div class="card-categoria reveal">
+                    <div class="card-icone">🔋</div>
+                    <h3>Pilhas e Baterias</h3>
+                    <p>Descarte correto de pilhas domésticas e baterias para evitar a contaminação do solo.</p>
+                    <a href="../Eletronico/Eletronico.html" class="btn-categoria">Ver Locais</a>
+                </div>
+
+                <div class="card-categoria reveal">
+                    <div class="card-icone">📺</div>
+                    <h3>Eletrodomésticos</h3>
+                    <p>Televisores antigos, micro-ondas, monitores CRT e aparelhos de som quebrados.</p>
+                    <a href="../Eletronico/Eletronico.html" class="btn-categoria">Ver Locais</a>
+                </div>
+
+            </div>
         </section>
     </main>
 

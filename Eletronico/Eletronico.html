@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reciclatech</title>
+    <title>Reciclatech - Eletrônicos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/gft4sfz.css">
     <link rel="icon" type="image/png" href="globo.png">
@@ -11,53 +11,104 @@
 <body>
    
     <header>
-        <a href="../home/index.html" class="logo-link">
-            <img src="globo.png" alt="ReciclaTech">
-            <h1>ReciclaTech</h1>
-        </a>
+        <div class="header-container">
+            <a href="../home/index.html" class="logo-link">
+                <div class="logo-area">
+                    <img src="globo.png" alt="ReciclaTech">
+                    <h1>ReciclaTech</h1>
+                </div>
+            </a>
+            <nav class="menu-navegacao">
+                <a href="../home/index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link ativo">Eletrônicos</a>
+                <a href="../equipe/index.html" class="nav-link destaque-equipe">Nossa Equipe →</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="janela"></div>
+    <div class="janela">
+        <div class="user-status">
+            <span>Pontos de Descarte Cadastrados</span>
+        </div>
+    </div>
 
     <main>
         <h3 class="titulo-secao">Locais para descarte:</h3>
         
-        <div class="ponto-card">
+        <div class="ponto-card reveal" data-abertura="08:00" data-fechamento="17:30" data-sabado="08:00" data-sabado-fecha="12:00">
             <div class="container-imagens">
-                <img src="Ecoponto/Foto_ecoponto.png" class="Imagens-Locais">
-                <img src="Ecoponto/foto_ecoponto2.png" class="Imagens-Locais">
-                <img src="Ecoponto/foto_ecoponto3.png" class="Imagens-Locais">
+                <img src="Ecoponto/Foto_ecoponto.png" alt="Ecoponto 1" class="Imagens-Locais">
+                <img src="Ecoponto/foto_ecoponto2.png" alt="Ecoponto 2" class="Imagens-Locais">
+                <img src="Ecoponto/foto_ecoponto3.png" alt="Ecoponto 3" class="Imagens-Locais">
             </div>
-            <h2 class="Pontos-de-descarte">Ecoponto Santa Clara IV</h2>
+            
+            <div class="header-card">
+                <h2 class="Pontos-de-descarte">Ecoponto Santa Clara IV</h2>
+                <span class="status-badge">Carregando status...</span>
+            </div>
+
             <p class="Horarios-funcionamento"><b class="Negrito">Horário de funcionamento:</b> Segunda a Sexta-feira, das 8h às 17:30h; Sábados, das 8h às 12h.</p>
-            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.app.goo.gl/MvuZuN7xxbFUmmNB6" target="_blank">R. Jandir Domingues Bazei - Res. Santa Clara, Toledo - PR</a></p>
-            <p class="telefone-para-contato"><b class="Negrito">Telefone:</b> (45) 99828-1446</p>
+            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.google.com/?q=R.+Jandir+Domingues+Bazei+-+Res.+Santa+Clara,+Toledo+-+PR" target="_blank">R. Jandir Domingues Bazei - Res. Santa Clara, Toledo - PR</a></p>
+            
+            <div class="botoes-acao">
+                <a href="https://wa.me/5545998281446" target="_blank" class="btn-whatsapp">Fale no WhatsApp: (45) 99828-1446</a>
+            </div>
+
+            <div class="mapa-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.176378413645!2d-53.7225114!3d-24.7242774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f395ca03e67e37%3A0x673dbb10887be199!2sR.%20Jandir%20Domingues%20Bazei%20-%20Res.%20Santa%20Clara%2C%20Toledo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
-        <div class="ponto-card">
+        <div class="ponto-card reveal" data-abertura="08:00" data-fechamento="17:30" data-sabado="08:00" data-sabado-fecha="12:00">
             <div class="container-imagens">
-                <img src="Aterro_toledo/Aterro_Sanitario.png" class="Imagens-Locais">
-                <img src="Aterro_toledo/Aterro_Sanitario2.png" class="Imagens-Locais">
-                <img src="Aterro_toledo/Aterro_Sanitario3.png" class="Imagens-Locais">
+                <img src="Aterro_toledo/Aterro_Sanitario.png" alt="Aterro Toledo 1" class="Imagens-Locais">
+                <img src="Aterro_toledo/Aterro_Sanitario2.png" alt="Aterro Toledo 2" class="Imagens-Locais">
+                <img src="Aterro_toledo/Aterro_Sanitario3.png" alt="Aterro Toledo 3" class="Imagens-Locais">
             </div>
-            <h2 class="Pontos-de-descarte">Aterro Sanitário Municipal - Toledo PR</h2>
+
+            <div class="header-card">
+                <h2 class="Pontos-de-descarte">Aterro Sanitário Municipal - Toledo PR</h2>
+                <span class="status-badge">Carregando status...</span>
+            </div>
+
             <p class="Horarios-funcionamento"><b class="Negrito">Horário de funcionamento:</b> Segunda a Sexta-feira, das 8h às 17:30h; Sábados, das 8h às 12h.</p>
-            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.app.goo.gl/nK4buDGsekS5dtPj9" target="_blank">Rodovia PR–317, Km 07, estrada sentido ao município de Ouro Verde do Oeste, PR. </a></p>
-            <p class="telefone-para-contato"><b class="Negrito">Telefone:</b> (45) 3252-1976</p>
+            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.google.com/?q=Aterro+Sanitario+Municipal+Toledo+PR" target="_blank">Rodovia PR–317, Km 07, sentido Ouro Verde do Oeste, PR.</a></p>
+            
+            <div class="botoes-acao">
+                <a href="https://wa.me/554532521976" target="_blank" class="btn-whatsapp">Ligar/Whats: (45) 3252-1976</a>
+            </div>
+
+            <div class="mapa-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57843.08726581977!2d-53.7915509!3d-24.7709503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f39446f25af9cf%3A0x6fbca837ee5092cf!2sToledo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1710000000001!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
-        <div class="ponto-card">
+
+        <div class="ponto-card reveal" data-abertura="08:00" data-fechamento="17:30" data-sabado="08:00" data-sabado-fecha="12:00">
             <div class="container-imagens">
-                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel.png" class="Imagens-Locais">
-                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel2.png" class="Imagens-Locais">
-                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel3.png" class="Imagens-Locais">
+                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel.png" alt="Aterro Cascavel 1" class="Imagens-Locais">
+                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel2.png" alt="Aterro Cascavel 2" class="Imagens-Locais">
+                <img src="Aterro_Cvel/Aterro_Sanitario_Cascavel3.png" alt="Aterro Cascavel 3" class="Imagens-Locais">
             </div>
-            <h2 class="Pontos-de-descarte">Aterro Sanitário Municipal - Cascavel PR</h2>
+
+            <div class="header-card">
+                <h2 class="Pontos-de-descarte">Aterro Sanitário Municipal - Cascavel PR</h2>
+                <span class="status-badge">Carregando status...</span>
+            </div>
+
             <p class="Horarios-funcionamento"><b class="Negrito">Horário de funcionamento:</b> Segunda a Sexta-feira, das 8h às 17:30h; Sábados, das 8h às 12h.</p>
-            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.app.goo.gl/o8FuLbDnjE1hYEdx8" target="_blank">Linha xx, S/N, Estr. Rural, Cascavel - PR </a></p>
-            <p class="telefone-para-contato"><b class="Negrito">Telefone:</b> (45) 3223-6635</p>
+            <p class="Endereço-locais"><b class="Negrito">Endereço: </b><a href="https://maps.google.com/?q=Aterro+Sanitario+Cascavel+PR" target="_blank">Linha xx, S/N, Estr. Rural, Cascavel - PR</a></p>
+            
+            <div class="botoes-acao">
+                <a href="https://wa.me/554532236635" target="_blank" class="btn-whatsapp">Ligar/Whats: (45) 3223-6635</a>
+            </div>
+
+            <div class="mapa-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14457.91500642456!2d-53.4548485!3d-24.9668485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3d40e15555555%3A0x5555555555555555!2sCascavel%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1710000000002!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
