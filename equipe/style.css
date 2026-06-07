@@ -41,7 +41,7 @@ header {
     display: flex;
     align-items: center;
 }
-img[src="../home/globo.png"] {
+img[src="../globo.png"] {
     width: 90px;
     height: 90px;
 }
@@ -195,7 +195,7 @@ main {
 }
 @media (max-width: 768px) {
     header h1 { font-size: 32px; }
-    img[src="../home/globo.png"] { width: 70px; height: 70px; }
+    img[src="../globo.png"] { width: 70px; height: 70px; }
     .header-container { flex-direction: column; text-align: center; }
     .menu-navegacao { width: 100%; flex-direction: column; gap: 10px; }
     .nav-link { width: 100%; text-align: center; }
